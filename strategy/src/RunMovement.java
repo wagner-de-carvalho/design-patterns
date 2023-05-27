@@ -6,13 +6,9 @@ public class RunMovement implements Movement {
 		
 		while (currentDistance < distance) {
 			currentDistance++;
+			Stop.stop(150);
 			
-			try {
-				Thread.sleep(150);
-			} catch (InterruptedException e) {
-			}
-			
-			System.out.println("Dist�ncia percorrida: " + currentDistance + "m");
+			System.out.println("Distância percorrida: " + currentDistance + "m");
 		}
 	}
 }

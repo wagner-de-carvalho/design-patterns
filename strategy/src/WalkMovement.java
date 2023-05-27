@@ -6,22 +6,16 @@ public class WalkMovement implements Movement {
 
         while (currentDistance < distance) {
             currentDistance++;
-            stop(300);
+            Stop.stop(300);
 
             if (currentDistance % 20 == 0) {
-                stop(300);
+                Stop.stop(300);
 
                 System.out.println("Parada para descanso");
             }
 
-            System.out.println("Dist�ncia percorrida: " + currentDistance + "m");
+            System.out.println("Distância percorrida: " + currentDistance + "m");
         }
     }
 
-    private void stop(int stop) {
-        try {
-            Thread.sleep(stop);
-        } catch (InterruptedException e) {
-        }
-    }
 }

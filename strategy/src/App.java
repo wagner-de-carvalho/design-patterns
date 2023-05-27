@@ -2,7 +2,7 @@ public class App {
 
 	public static void main(String[] args) {
 		
-		Person p = new Person("Jos�");
+		Person p = new Person("José");
 		p.move(new RunMovement(), 50);
 	}
 }
